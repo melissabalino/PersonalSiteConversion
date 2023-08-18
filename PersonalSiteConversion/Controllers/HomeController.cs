@@ -26,7 +26,7 @@ namespace PersonalSiteConversion.Controllers
         {
             if (!ModelState.IsValid)
             {
-                return View(cvm);
+                return View("Index", cvm);
             }
 
             string message = $"You have received a new email from your site's contact form!<br />" +
@@ -60,12 +60,15 @@ namespace PersonalSiteConversion.Controllers
                 }
                 catch (Exception ex)
                 {
-                    ViewBag.Error= $"There wan error processing your request. Please try again later." +
+                    ViewBag.ErrorMessage= $"There wan error processing your request. Please try again later." +
                         $"<br />Error Message: {ex.StackTrace}";
                     return RedirectToAction("Index", new {ID = "contact"});
                 }
             }
-            return View("EmailConfirmation", cvm);
+
+            ViewBag.Success = "Email sent successfully.";
+
+            return View("Index", cvm);
         }
 
         public IActionResult Index()
