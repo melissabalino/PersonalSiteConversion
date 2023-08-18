@@ -1,0 +1,312 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>aspnet-PersonalSiteConversion-c6c075c2-cd92-4fc6-a222-3d8efb7181bd</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\.gitignore" />
+    <Content Remove="wwwroot\assets\css\style.css" />
+    <Content Remove="wwwroot\assets\img\ATM login.png" />
+    <Content Remove="wwwroot\assets\img\ATM login2.png" />
+    <Content Remove="wwwroot\assets\img\ATM menu.png" />
+    <Content Remove="wwwroot\assets\img\ATM-balance inquiry.png" />
+    <Content Remove="wwwroot\assets\img\ATM-console-app.png" />
+    <Content Remove="wwwroot\assets\img\ATM-deposit.png" />
+    <Content Remove="wwwroot\assets\img\ATM-menu.png" />
+    <Content Remove="wwwroot\assets\img\ATM-withdraw.png" />
+    <Content Remove="wwwroot\assets\img\blank notecard.jpg" />
+    <Content Remove="wwwroot\assets\img\cover.png" />
+    <Content Remove="wwwroot\assets\img\default.png" />
+    <Content Remove="wwwroot\assets\img\dungeon-app-main.png" />
+    <Content Remove="wwwroot\assets\img\dungeon-app1.png" />
+    <Content Remove="wwwroot\assets\img\dungeon-app2.png" />
+    <Content Remove="wwwroot\assets\img\dungeon-app3.png" />
+    <Content Remove="wwwroot\assets\img\dungeon-app4.png" />
+    <Content Remove="wwwroot\assets\img\dungeon-app5.png" />
+    <Content Remove="wwwroot\assets\img\favicon.png" />
+    <Content Remove="wwwroot\assets\img\Favicon\about.txt" />
+    <Content Remove="wwwroot\assets\img\Favicon\android-chrome-192x192.png" />
+    <Content Remove="wwwroot\assets\img\Favicon\android-chrome-512x512.png" />
+    <Content Remove="wwwroot\assets\img\Favicon\apple-touch-icon.png" />
+    <Content Remove="wwwroot\assets\img\Favicon\favicon-16x16.png" />
+    <Content Remove="wwwroot\assets\img\Favicon\favicon-32x32.png" />
+    <Content Remove="wwwroot\assets\img\Favicon\favicon.ico" />
+    <Content Remove="wwwroot\assets\img\Favicon\site.webmanifest" />
+    <Content Remove="wwwroot\assets\img\Magic8Ball-Q1.png" />
+    <Content Remove="wwwroot\assets\img\Magic8Ball-Q2.png" />
+    <Content Remove="wwwroot\assets\img\Magic8Ball-Q3.png" />
+    <Content Remove="wwwroot\assets\img\Magic8Ball.png" />
+    <Content Remove="wwwroot\assets\img\Magic8ball1.png" />
+    <Content Remove="wwwroot\assets\img\monstera.jpg" />
+    <Content Remove="wwwroot\assets\img\pfp.jpg" />
+    <Content Remove="wwwroot\assets\img\profile.png" />
+    <Content Remove="wwwroot\assets\js\main.js" />
+    <Content Remove="wwwroot\assets\scss\Readme.txt" />
+    <Content Remove="wwwroot\assets\vendor\bootstrap-icons\bootstrap-icons.css" />
+    <Content Remove="wwwroot\assets\vendor\bootstrap-icons\bootstrap-icons.min.css" />
+    <Content Remove="wwwroot\assets\vendor\bootstrap-icons\bootstrap-icons.scss" />
+    <Content Remove="wwwroot\assets\vendor\bootstrap-icons\fonts\bootstrap-icons.woff" />
+    <Content Remove="wwwroot\assets\vendor\bootstrap-icons\fonts\bootstrap-icons.woff2" />
+    <Content Remove="wwwroot\assets\vendor\bootstrap\css\bootstrap-grid.css" />
+    <Content Remove="wwwroot\assets\vendor\bootstrap\css\bootstrap-grid.css.map" />
+    <Content Remove="wwwroot\assets\vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Remove="wwwroot\assets\vendor\bootstrap\css\bootstrap-grid.min.css.map" />
+    <Content Remove="wwwroot\assets\vendor\bootstrap\css\bootstrap-grid.rtl.css" />
+    <Content Remove="wwwroot\assets\vendor\bootstrap\css\bootstrap-grid.rtl.css.map" />
+    <Content Remove="wwwroot\assets\vendor\bootstrap\css\bootstrap-grid.rtl.min.css" />
+    <Content Remove="wwwroot\assets\vendor\bootstrap\css\bootstrap-grid.rtl.min.css.map" />
+    <Content Remove="wwwroot\assets\vendor\bootstrap\css\bootstrap-reboot.css" />
+    <Content Remove="wwwroot\assets\vendor\bootstrap\css\bootstrap-reboot.css.map" />
+    <Content Remove="wwwroot\assets\vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Remove="wwwroot\assets\vendor\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <Content Remove="wwwroot\assets\vendor\bootstrap\css\bootstrap-reboot.rtl.css" />
+    <Content Remove="wwwroot\assets\vendor\bootstrap\css\bootstrap-reboot.rtl.css.map" />
+    <Content Remove="wwwroot\assets\vendor\bootstrap\css\bootstrap-reboot.rtl.min.css" />
+    <Content Remove="wwwroot\assets\vendor\bootstrap\css\bootstrap-reboot.rtl.min.css.map" />
+    <Content Remove="wwwroot\assets\vendor\bootstrap\css\bootstrap-utilities.css" />
+    <Content Remove="wwwroot\assets\vendor\bootstrap\css\bootstrap-utilities.css.map" />
+    <Content Remove="wwwroot\assets\vendor\bootstrap\css\bootstrap-utilities.min.css" />
+    <Content Remove="wwwroot\assets\vendor\bootstrap\css\bootstrap-utilities.min.css.map" />
+    <Content Remove="wwwroot\assets\vendor\bootstrap\css\bootstrap-utilities.rtl.css" />
+    <Content Remove="wwwroot\assets\vendor\bootstrap\css\bootstrap-utilities.rtl.css.map" />
+    <Content Remove="wwwroot\assets\vendor\bootstrap\css\bootstrap-utilities.rtl.min.css" />
+    <Content Remove="wwwroot\assets\vendor\bootstrap\css\bootstrap-utilities.rtl.min.css.map" />
+    <Content Remove="wwwroot\assets\vendor\bootstrap\css\bootstrap.css" />
+    <Content Remove="wwwroot\assets\vendor\bootstrap\css\bootstrap.css.map" />
+    <Content Remove="wwwroot\assets\vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Remove="wwwroot\assets\vendor\bootstrap\css\bootstrap.min.css.map" />
+    <Content Remove="wwwroot\assets\vendor\bootstrap\css\bootstrap.rtl.css" />
+    <Content Remove="wwwroot\assets\vendor\bootstrap\css\bootstrap.rtl.css.map" />
+    <Content Remove="wwwroot\assets\vendor\bootstrap\css\bootstrap.rtl.min.css" />
+    <Content Remove="wwwroot\assets\vendor\bootstrap\css\bootstrap.rtl.min.css.map" />
+    <Content Remove="wwwroot\assets\vendor\bootstrap\js\bootstrap.bundle.js" />
+    <Content Remove="wwwroot\assets\vendor\bootstrap\js\bootstrap.bundle.js.map" />
+    <Content Remove="wwwroot\assets\vendor\bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Remove="wwwroot\assets\vendor\bootstrap\js\bootstrap.bundle.min.js.map" />
+    <Content Remove="wwwroot\assets\vendor\bootstrap\js\bootstrap.esm.js" />
+    <Content Remove="wwwroot\assets\vendor\bootstrap\js\bootstrap.esm.js.map" />
+    <Content Remove="wwwroot\assets\vendor\bootstrap\js\bootstrap.esm.min.js" />
+    <Content Remove="wwwroot\assets\vendor\bootstrap\js\bootstrap.esm.min.js.map" />
+    <Content Remove="wwwroot\assets\vendor\bootstrap\js\bootstrap.js" />
+    <Content Remove="wwwroot\assets\vendor\bootstrap\js\bootstrap.js.map" />
+    <Content Remove="wwwroot\assets\vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Remove="wwwroot\assets\vendor\bootstrap\js\bootstrap.min.js.map" />
+    <Content Remove="wwwroot\assets\vendor\boxicons\css\animations.css" />
+    <Content Remove="wwwroot\assets\vendor\boxicons\css\boxicons.css" />
+    <Content Remove="wwwroot\assets\vendor\boxicons\css\boxicons.min.css" />
+    <Content Remove="wwwroot\assets\vendor\boxicons\css\transformations.css" />
+    <Content Remove="wwwroot\assets\vendor\boxicons\fonts\boxicons.eot" />
+    <Content Remove="wwwroot\assets\vendor\boxicons\fonts\boxicons.svg" />
+    <Content Remove="wwwroot\assets\vendor\boxicons\fonts\boxicons.ttf" />
+    <Content Remove="wwwroot\assets\vendor\boxicons\fonts\boxicons.woff" />
+    <Content Remove="wwwroot\assets\vendor\boxicons\fonts\boxicons.woff2" />
+    <Content Remove="wwwroot\assets\vendor\glightbox\css\glightbox.css" />
+    <Content Remove="wwwroot\assets\vendor\glightbox\css\glightbox.min.css" />
+    <Content Remove="wwwroot\assets\vendor\glightbox\css\plyr.css" />
+    <Content Remove="wwwroot\assets\vendor\glightbox\css\plyr.min.css" />
+    <Content Remove="wwwroot\assets\vendor\glightbox\js\glightbox.js" />
+    <Content Remove="wwwroot\assets\vendor\glightbox\js\glightbox.min.js" />
+    <Content Remove="wwwroot\assets\vendor\isotope-layout\isotope.pkgd.js" />
+    <Content Remove="wwwroot\assets\vendor\isotope-layout\isotope.pkgd.min.js" />
+    <Content Remove="wwwroot\assets\vendor\php-email-form\validate.js" />
+    <Content Remove="wwwroot\assets\vendor\purecounter\purecounter_vanilla.js" />
+    <Content Remove="wwwroot\assets\vendor\purecounter\purecounter_vanilla.js.map" />
+    <Content Remove="wwwroot\assets\vendor\remixicon\remixicon.css" />
+    <Content Remove="wwwroot\assets\vendor\remixicon\remixicon.eot" />
+    <Content Remove="wwwroot\assets\vendor\remixicon\remixicon.less" />
+    <Content Remove="wwwroot\assets\vendor\remixicon\remixicon.svg" />
+    <Content Remove="wwwroot\assets\vendor\remixicon\remixicon.symbol.svg" />
+    <Content Remove="wwwroot\assets\vendor\remixicon\remixicon.ttf" />
+    <Content Remove="wwwroot\assets\vendor\remixicon\remixicon.woff" />
+    <Content Remove="wwwroot\assets\vendor\remixicon\remixicon.woff2" />
+    <Content Remove="wwwroot\assets\vendor\swiper\swiper-bundle.min.css" />
+    <Content Remove="wwwroot\assets\vendor\swiper\swiper-bundle.min.js" />
+    <Content Remove="wwwroot\assets\vendor\swiper\swiper-bundle.min.js.map" />
+    <Content Remove="wwwroot\assets\vendor\waypoints\noframework.waypoints.js" />
+    <Content Remove="wwwroot\forms\contact.php" />
+    <Content Remove="wwwroot\forms\Readme.txt" />
+    <Content Remove="wwwroot\index.html" />
+    <Content Remove="wwwroot\info.txt" />
+    <Content Remove="wwwroot\portfolio-details.html" />
+    <Content Remove="wwwroot\portfolio-details2.html" />
+    <Content Remove="wwwroot\portfolio-details3.html" />
+    <Content Remove="wwwroot\Readme.txt" />
+    <Content Remove="wwwroot\vector\default-monochrome-black.svg" />
+    <Content Remove="wwwroot\vector\default-monochrome-white.svg" />
+    <Content Remove="wwwroot\vector\default-monochrome.svg" />
+    <Content Remove="wwwroot\vector\default.svg" />
+    <Content Remove="wwwroot\vector\isolated-layout.svg" />
+    <Content Remove="wwwroot\vector\isolated-monochrome-black.svg" />
+    <Content Remove="wwwroot\vector\isolated-monochrome-white.svg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="wwwroot\.vscode\settings.json" />
+    <Content Include="_Archive\.vscode\settings.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="6.0.16" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.16" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.16" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.16" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.16" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.16" />
+    <PackageReference Include="NETCore.MailKit" Version="2.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\.gitignore" />
+    <None Include="wwwroot\assets\css\style.css" />
+    <None Include="wwwroot\assets\img\ATM login.png" />
+    <None Include="wwwroot\assets\img\ATM login2.png" />
+    <None Include="wwwroot\assets\img\ATM menu.png" />
+    <None Include="wwwroot\assets\img\ATM-balance inquiry.png" />
+    <None Include="wwwroot\assets\img\ATM-console-app.png" />
+    <None Include="wwwroot\assets\img\ATM-deposit.png" />
+    <None Include="wwwroot\assets\img\ATM-menu.png" />
+    <None Include="wwwroot\assets\img\ATM-withdraw.png" />
+    <None Include="wwwroot\assets\img\blank notecard.jpg" />
+    <None Include="wwwroot\assets\img\cover.png" />
+    <None Include="wwwroot\assets\img\default.png" />
+    <None Include="wwwroot\assets\img\dungeon-app-main.png" />
+    <None Include="wwwroot\assets\img\dungeon-app1.png" />
+    <None Include="wwwroot\assets\img\dungeon-app2.png" />
+    <None Include="wwwroot\assets\img\dungeon-app3.png" />
+    <None Include="wwwroot\assets\img\dungeon-app4.png" />
+    <None Include="wwwroot\assets\img\dungeon-app5.png" />
+    <None Include="wwwroot\assets\img\favicon.png" />
+    <None Include="wwwroot\assets\img\Favicon\about.txt" />
+    <None Include="wwwroot\assets\img\Favicon\android-chrome-192x192.png" />
+    <None Include="wwwroot\assets\img\Favicon\android-chrome-512x512.png" />
+    <None Include="wwwroot\assets\img\Favicon\apple-touch-icon.png" />
+    <None Include="wwwroot\assets\img\Favicon\favicon-16x16.png" />
+    <None Include="wwwroot\assets\img\Favicon\favicon-32x32.png" />
+    <None Include="wwwroot\assets\img\Favicon\favicon.ico" />
+    <None Include="wwwroot\assets\img\Favicon\site.webmanifest" />
+    <None Include="wwwroot\assets\img\Magic8Ball-Q1.png" />
+    <None Include="wwwroot\assets\img\Magic8Ball-Q2.png" />
+    <None Include="wwwroot\assets\img\Magic8Ball-Q3.png" />
+    <None Include="wwwroot\assets\img\Magic8Ball.png" />
+    <None Include="wwwroot\assets\img\Magic8ball1.png" />
+    <None Include="wwwroot\assets\img\monstera.jpg" />
+    <None Include="wwwroot\assets\img\pfp.jpg" />
+    <None Include="wwwroot\assets\img\profile.png" />
+    <None Include="wwwroot\assets\js\main.js" />
+    <None Include="wwwroot\assets\scss\Readme.txt" />
+    <None Include="wwwroot\assets\vendor\bootstrap-icons\bootstrap-icons.css" />
+    <None Include="wwwroot\assets\vendor\bootstrap-icons\bootstrap-icons.min.css" />
+    <None Include="wwwroot\assets\vendor\bootstrap-icons\bootstrap-icons.scss" />
+    <None Include="wwwroot\assets\vendor\bootstrap-icons\fonts\bootstrap-icons.woff" />
+    <None Include="wwwroot\assets\vendor\bootstrap-icons\fonts\bootstrap-icons.woff2" />
+    <None Include="wwwroot\assets\vendor\bootstrap\css\bootstrap-grid.css" />
+    <None Include="wwwroot\assets\vendor\bootstrap\css\bootstrap-grid.css.map" />
+    <None Include="wwwroot\assets\vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <None Include="wwwroot\assets\vendor\bootstrap\css\bootstrap-grid.min.css.map" />
+    <None Include="wwwroot\assets\vendor\bootstrap\css\bootstrap-grid.rtl.css" />
+    <None Include="wwwroot\assets\vendor\bootstrap\css\bootstrap-grid.rtl.css.map" />
+    <None Include="wwwroot\assets\vendor\bootstrap\css\bootstrap-grid.rtl.min.css" />
+    <None Include="wwwroot\assets\vendor\bootstrap\css\bootstrap-grid.rtl.min.css.map" />
+    <None Include="wwwroot\assets\vendor\bootstrap\css\bootstrap-reboot.css" />
+    <None Include="wwwroot\assets\vendor\bootstrap\css\bootstrap-reboot.css.map" />
+    <None Include="wwwroot\assets\vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <None Include="wwwroot\assets\vendor\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <None Include="wwwroot\assets\vendor\bootstrap\css\bootstrap-reboot.rtl.css" />
+    <None Include="wwwroot\assets\vendor\bootstrap\css\bootstrap-reboot.rtl.css.map" />
+    <None Include="wwwroot\assets\vendor\bootstrap\css\bootstrap-reboot.rtl.min.css" />
+    <None Include="wwwroot\assets\vendor\bootstrap\css\bootstrap-reboot.rtl.min.css.map" />
+    <None Include="wwwroot\assets\vendor\bootstrap\css\bootstrap-utilities.css" />
+    <None Include="wwwroot\assets\vendor\bootstrap\css\bootstrap-utilities.css.map" />
+    <None Include="wwwroot\assets\vendor\bootstrap\css\bootstrap-utilities.min.css" />
+    <None Include="wwwroot\assets\vendor\bootstrap\css\bootstrap-utilities.min.css.map" />
+    <None Include="wwwroot\assets\vendor\bootstrap\css\bootstrap-utilities.rtl.css" />
+    <None Include="wwwroot\assets\vendor\bootstrap\css\bootstrap-utilities.rtl.css.map" />
+    <None Include="wwwroot\assets\vendor\bootstrap\css\bootstrap-utilities.rtl.min.css" />
+    <None Include="wwwroot\assets\vendor\bootstrap\css\bootstrap-utilities.rtl.min.css.map" />
+    <None Include="wwwroot\assets\vendor\bootstrap\css\bootstrap.css" />
+    <None Include="wwwroot\assets\vendor\bootstrap\css\bootstrap.css.map" />
+    <None Include="wwwroot\assets\vendor\bootstrap\css\bootstrap.min.css" />
+    <None Include="wwwroot\assets\vendor\bootstrap\css\bootstrap.min.css.map" />
+    <None Include="wwwroot\assets\vendor\bootstrap\css\bootstrap.rtl.css" />
+    <None Include="wwwroot\assets\vendor\bootstrap\css\bootstrap.rtl.css.map" />
+    <None Include="wwwroot\assets\vendor\bootstrap\css\bootstrap.rtl.min.css" />
+    <None Include="wwwroot\assets\vendor\bootstrap\css\bootstrap.rtl.min.css.map" />
+    <None Include="wwwroot\assets\vendor\bootstrap\js\bootstrap.bundle.js" />
+    <None Include="wwwroot\assets\vendor\bootstrap\js\bootstrap.bundle.js.map" />
+    <None Include="wwwroot\assets\vendor\bootstrap\js\bootstrap.bundle.min.js" />
+    <None Include="wwwroot\assets\vendor\bootstrap\js\bootstrap.bundle.min.js.map" />
+    <None Include="wwwroot\assets\vendor\bootstrap\js\bootstrap.esm.js" />
+    <None Include="wwwroot\assets\vendor\bootstrap\js\bootstrap.esm.js.map" />
+    <None Include="wwwroot\assets\vendor\bootstrap\js\bootstrap.esm.min.js" />
+    <None Include="wwwroot\assets\vendor\bootstrap\js\bootstrap.esm.min.js.map" />
+    <None Include="wwwroot\assets\vendor\bootstrap\js\bootstrap.js" />
+    <None Include="wwwroot\assets\vendor\bootstrap\js\bootstrap.js.map" />
+    <None Include="wwwroot\assets\vendor\bootstrap\js\bootstrap.min.js" />
+    <None Include="wwwroot\assets\vendor\bootstrap\js\bootstrap.min.js.map" />
+    <None Include="wwwroot\assets\vendor\boxicons\css\animations.css" />
+    <None Include="wwwroot\assets\vendor\boxicons\css\boxicons.css" />
+    <None Include="wwwroot\assets\vendor\boxicons\css\boxicons.min.css" />
+    <None Include="wwwroot\assets\vendor\boxicons\css\transformations.css" />
+    <None Include="wwwroot\assets\vendor\boxicons\fonts\boxicons.eot" />
+    <None Include="wwwroot\assets\vendor\boxicons\fonts\boxicons.svg" />
+    <None Include="wwwroot\assets\vendor\boxicons\fonts\boxicons.ttf" />
+    <None Include="wwwroot\assets\vendor\boxicons\fonts\boxicons.woff" />
+    <None Include="wwwroot\assets\vendor\boxicons\fonts\boxicons.woff2" />
+    <None Include="wwwroot\assets\vendor\glightbox\css\glightbox.css" />
+    <None Include="wwwroot\assets\vendor\glightbox\css\glightbox.min.css" />
+    <None Include="wwwroot\assets\vendor\glightbox\css\plyr.css" />
+    <None Include="wwwroot\assets\vendor\glightbox\css\plyr.min.css" />
+    <None Include="wwwroot\assets\vendor\glightbox\js\glightbox.js" />
+    <None Include="wwwroot\assets\vendor\glightbox\js\glightbox.min.js" />
+    <None Include="wwwroot\assets\vendor\isotope-layout\isotope.pkgd.js" />
+    <None Include="wwwroot\assets\vendor\isotope-layout\isotope.pkgd.min.js" />
+    <None Include="wwwroot\assets\vendor\php-email-form\validate.js" />
+    <None Include="wwwroot\assets\vendor\purecounter\purecounter_vanilla.js" />
+    <None Include="wwwroot\assets\vendor\purecounter\purecounter_vanilla.js.map" />
+    <None Include="wwwroot\assets\vendor\remixicon\remixicon.css" />
+    <None Include="wwwroot\assets\vendor\remixicon\remixicon.eot" />
+    <None Include="wwwroot\assets\vendor\remixicon\remixicon.less" />
+    <None Include="wwwroot\assets\vendor\remixicon\remixicon.svg" />
+    <None Include="wwwroot\assets\vendor\remixicon\remixicon.symbol.svg" />
+    <None Include="wwwroot\assets\vendor\remixicon\remixicon.ttf" />
+    <None Include="wwwroot\assets\vendor\remixicon\remixicon.woff" />
+    <None Include="wwwroot\assets\vendor\remixicon\remixicon.woff2" />
+    <None Include="wwwroot\assets\vendor\swiper\swiper-bundle.min.css" />
+    <None Include="wwwroot\assets\vendor\swiper\swiper-bundle.min.js" />
+    <None Include="wwwroot\assets\vendor\swiper\swiper-bundle.min.js.map" />
+    <None Include="wwwroot\assets\vendor\waypoints\noframework.waypoints.js" />
+    <None Include="wwwroot\forms\contact.php" />
+    <None Include="wwwroot\forms\Readme.txt" />
+    <None Include="wwwroot\index.html" />
+    <None Include="wwwroot\info.txt" />
+    <None Include="wwwroot\portfolio-details.html" />
+    <None Include="wwwroot\portfolio-details2.html" />
+    <None Include="wwwroot\portfolio-details3.html" />
+    <None Include="wwwroot\Readme.txt" />
+    <None Include="wwwroot\vector\default-monochrome-black.svg" />
+    <None Include="wwwroot\vector\default-monochrome-white.svg" />
+    <None Include="wwwroot\vector\default-monochrome.svg" />
+    <None Include="wwwroot\vector\default.svg" />
+    <None Include="wwwroot\vector\isolated-layout.svg" />
+    <None Include="wwwroot\vector\isolated-monochrome-black.svg" />
+    <None Include="wwwroot\vector\isolated-monochrome-white.svg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="wwwroot\assets\vendor\bootstrap-icons\bootstrap-icons.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\assets\vendor\remixicon\remixicon.glyph.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>

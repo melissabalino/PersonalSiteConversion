@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: Aileron-Thin
+font link: http://dotcolon.net/font/aileron/
+font author: dot colon
+font author site: http://dotcolon.net/
+
+
+icon designer: Yaroslav Samoylov
+icon designer link: /lionlionleo
+        
+{"bg":"#2B282C","icon":"#746657","font":"#ffffff","slogan":"#ffffff"}
+      
