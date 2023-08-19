@@ -60,7 +60,7 @@ namespace PersonalSiteConversion.Controllers
                 }
                 catch (Exception ex)
                 {
-                    ViewBag.ErrorMessage= $"There wan error processing your request. Please try again later." +
+                    ViewBag.ErrorMessage= $"There was error processing your request. Please try again later." +
                         $"<br />Error Message: {ex.StackTrace}";
                     return RedirectToAction("Index", new {ID = "contact"});
                 }
