@@ -68,7 +68,7 @@ namespace PersonalSiteConversion.Controllers
 
             ViewBag.Success = "Email sent successfully.";
 
-            return View("Index", cvm);
+            return View("EmailConfirmation", cvm);
         }
 
         public IActionResult Index()

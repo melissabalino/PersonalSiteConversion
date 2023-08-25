@@ -1,8 +1,10 @@
-﻿using System.ComponentModel;
+﻿using Microsoft.EntityFrameworkCore;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
 namespace PersonalSiteConversion.Models
 {
+    [Keyless]
     public class ContactViewModel
     {
         [Required(ErrorMessage = "*Name is required")]

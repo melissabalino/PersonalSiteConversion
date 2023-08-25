@@ -134,6 +134,7 @@
     <Content Remove="wwwroot\portfolio-details.html" />
     <Content Remove="wwwroot\portfolio-details2.html" />
     <Content Remove="wwwroot\portfolio-details3.html" />
+    <Content Remove="wwwroot\portfolio-details4.html" />
     <Content Remove="wwwroot\Readme.txt" />
     <Content Remove="wwwroot\vector\default-monochrome-black.svg" />
     <Content Remove="wwwroot\vector\default-monochrome-white.svg" />
@@ -154,7 +155,10 @@
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.16" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.16" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.16" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.16" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.21">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.16" />
     <PackageReference Include="NETCore.MailKit" Version="2.1.0" />
   </ItemGroup>
@@ -285,6 +289,7 @@
     <None Include="wwwroot\info.txt" />
     <None Include="wwwroot\portfolio-details.html" />
     <None Include="wwwroot\portfolio-details2.html" />
+    <None Include="wwwroot\portfolio-details4.html" />
     <None Include="wwwroot\portfolio-details3.html" />
     <None Include="wwwroot\Readme.txt" />
     <None Include="wwwroot\vector\default-monochrome-black.svg" />

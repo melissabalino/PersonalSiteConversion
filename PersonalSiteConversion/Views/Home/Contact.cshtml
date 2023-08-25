@@ -1,0 +1,80 @@
+﻿@model PersonalSiteConversion.Models.ContactViewModel
+
+@{
+    ViewData["Title"] = "Contact";
+}
+
+<!-- ======= Contact Section ======= -->
+<section id="contact" class="contact section-show">
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Contact Form</h2>
+            <p>Contact Me</p>
+        </div>
+
+        <div class="row mt-2">
+
+            <div class="col-md-6 d-flex align-items-stretch">
+                <div class="info-box">
+                    <i class="bx bx-map"></i>
+                    <h3>Location</h3>
+                    <p>Greater Kansas City Metropolitan Area / Remote</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 mt-md-0 d-flex align-items-stretch">
+                <div class="info-box">
+                    <i class="bx bx-share-alt"></i>
+                    <h3>Social Profiles</h3>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/melissabalino/" target="_blank" rel="noreferrer" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://github.com/melissabalino" target="_blank" rel="noreferrer" class="github"><i class="bi bi-github"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <form asp-action="Contact" role="form" class="php-email-form mt-4">
+            <p>Contact Form</p>
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="row">
+                <div class="col-md-6 form-group">
+                    @*<label asp-for="Name" class="control-label"></label>*@
+                    <input asp-for="Name" class="form-control" id="name" placeholder="Your Name" required />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                    @*<label asp-for="Email" class="control-label"></label>*@
+                    <input asp-for="Email" class="form-control" id="email" placeholder="Your Email" required />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group mt-3">
+                @*<label asp-for="Subject" class="control-label"></label>*@
+                <input asp-for="Subject" class="form-control" id="subject" placeholder="Subject" required />
+                <span asp-validation-for="Subject" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mt-3">
+                @*<label asp-for="Message" class="control-label"></label>*@
+                <textarea asp-for="Message" class="form-control" rows="5" placeholder="Message" required></textarea>
+                <span asp-validation-for="Message" class="text-danger"></span>
+            </div>
+
+            <div class="text-center my-3"><button type="submit">Send Message</button></div>
+        </form>
+
+    </div>
+</section><!-- End Contact Section -->
+
+@section Scripts {
+    <script>
+        let header = document.getElementById('header');
+        header.classList.add('header-top');
+    </script>
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -42,7 +42,7 @@
 
     <!-- ======= Header ======= -->
 
-    <div class="m-5">
+  @*  <div class="m-5">
         @if (ViewBag.Success != null)
         {
             <div class="alert alert-success alert-dismissible fade show" role="alert">
@@ -57,7 +57,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
         }
-    </div>
+    </div>*@
 
     <header id="header">
         <div class="container">
@@ -67,17 +67,47 @@
             <!-- <a href="index.html" class="mr-auto"><img src="assets/img/cover.png" alt="logo" class="img-fluid"></a> -->
             <h2>I'm a passionate <span>Full Stack Developer</span>.</h2>
 
+            @if (ViewData["Title"].ToString() != "Contact" && ViewData["Title"].ToString() != "Email Confirmation")
+            {
+                <nav id="navbar" class="navbar">
+                    <ul>
+                        <li><a class="nav-link active" href="#header">Home</a></li>
+                        <li><a class="nav-link" href="#about">About</a></li>
+                        <li><a class="nav-link" href="#resume">Resume</a></li>
+                        <li><a class="nav-link" href="#services">Centriq</a></li>
+                        <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                        <li><a class="nav-link" href="@Url.Action("Contact","Home")">Contact</a></li>
+                    </ul>
+                    <i class="bi bi-list mobile-nav-toggle"></i>
+                </nav>
+
+                <!-- .navbar -->
+            }
+            else
+            {
+                
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a class="nav-link active" href="#header">Home</a></li>
-                    <li><a class="nav-link" href="#about">About</a></li>
-                    <li><a class="nav-link" href="#resume">Resume</a></li>
-                    <li><a class="nav-link" href="#services">Centriq</a></li>
-                    <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
-                    <li><a class="nav-link" href="#contact">Contact</a></li>
+                    <li>
+                        @Html.ActionLink("Home", "Index", "Home", null, null, "#header", null, new{ @class = "nav-link" })
+                    </li>
+                        <li>
+                            @Html.ActionLink("About", "Index", "Home", null, null, "#about", null, new{ @class = "nav-link" })
+                        </li>
+                        <li>
+                            @Html.ActionLink("Resume", "Index", "Home", null, null, "#resume", null, new{ @class = "nav-link" })
+                        </li>
+                        <li>
+                            @Html.ActionLink("Centriq", "Index", "Home", null, null, "#centriq", null, new{ @class = "nav-link" })
+                        </li>
+                        <li>
+                            @Html.ActionLink("Portfolio", "Index", "Home", null, null, "#portfolio", null, new{ @class = "nav-link" })
+                        </li>
+                        <li><a class="active nav-link" href="@Url.Action("Contact","Home")">Contact</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
+            }
 
             <div class="social-links">
                 <a href="https://www.linkedin.com/in/melissabalino/" target="_blank" rel="noreferrer" class="linkedin"><i class="bi bi-linkedin"></i></a>
